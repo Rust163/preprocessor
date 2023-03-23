@@ -1,4 +1,5 @@
 #pragma 
+
 #ifndef INTEGER
 	void fillingTheArrayWithRandomValuesInteger(int arrInteger[], int size);
 	void outputOfArrayValuesToTheConsoleInteger(int arrInteger[], int size);
@@ -12,8 +13,9 @@
 #define findingTheMaximumElement findingTheMaximumElementInteger;
 #define sorting sortingInteger;
 #define editingAnArrayValue editingAnArrayValueInteger;
+#endif
 
-#elif FLOAT
+#ifndef FLOAT
 	void fillingTheArrayWithRandomValuesFloat(float arrFloat[], int size1);
 	void outputOfArrayValuesToTheConsoleFloat(float arrFloat[], int size1);
 	void findingTheMinimumElementFloat(float arrFloat[], int size1);
@@ -26,8 +28,9 @@
 #define findingTheMaximumElement findingTheMaximumElementFloat;
 #define sorting sortingFloat;
 #define editingAnArrayValue editingAnArrayValueFloat;
+#endif
 
-#elif CHAR
+#ifndef CHAR
 	void fillingTheArrayWithRandomValuesChar(char arrChar[], int size2);
 	void outputOfArrayValuesToTheConsoleChar(char arrChar[], int size2);
 	void findingTheMinimumElementChar(char arrChar[], int size2);

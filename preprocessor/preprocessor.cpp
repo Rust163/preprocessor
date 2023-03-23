@@ -22,78 +22,78 @@ int main()
 	cout << "\n////////////////////////////////*************INTEGER**************////////////////////////////////////\n";
 	const int size = 10;
 	int arrInteger[size];
-	fillingTheArrayWithRandomValues(arrInteger, size);
+	fillingTheArrayWithRandomValuesInteger(arrInteger, size);
 	cout << "Show this array: " << endl;
-	outputOfArrayValuesToTheConsole(arrInteger, size);
+	outputOfArrayValuesToTheConsoleInteger(arrInteger, size);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Find minimum this array: " << endl;
-	findingTheMinimumElement(arrInteger, size);
+	findingTheMinimumElementInteger(arrInteger, size);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Find maximum this array: " << endl;
-	findingTheMaximumElement(arrInteger, size);
+	findingTheMaximumElementInteger(arrInteger, size);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Lets sort this array: " << endl;
-	sorting(arrInteger, size);
-	outputOfArrayValuesToTheConsole(arrInteger, size);
+	sortingInteger(arrInteger, size);
+	outputOfArrayValuesToTheConsoleInteger(arrInteger, size);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Edit value this array: " << endl;
-	editingAnArrayValue(arrInteger);
-	outputOfArrayValuesToTheConsole(arrInteger, size);
-#undef INTEGER
+	editingAnArrayValueInteger(arrInteger);
+	outputOfArrayValuesToTheConsoleInteger(arrInteger, size);
+
 
 	cout << "\n////////////////////////////////*************FLOAT**************////////////////////////////////////\n";
 	const int size1 = 10;
 	float arrFloat[size1];
-	fillingTheArrayWithRandomValues(arrFloat, size1);
+	fillingTheArrayWithRandomValuesFloat(arrFloat, size1);
 	cout << "Show this array: " << endl;
-	outputOfArrayValuesToTheConsole(arrFloat, size1);
+	outputOfArrayValuesToTheConsoleFloat(arrFloat, size1);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Find minimum this array: " << endl;
-	findingTheMinimumElement(arrFloat, size1);
+	findingTheMinimumElementFloat(arrFloat, size1);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Find maximum this array: " << endl;
-	findingTheMaximumElement(arrFloat, size1);
+	findingTheMaximumElementFloat(arrFloat, size1);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Lets sort this array: " << endl;
-	sorting(arrFloat, size1);
-	outputOfArrayValuesToTheConsole(arrFloat, size1);
+	sortingFloat(arrFloat, size1);
+	outputOfArrayValuesToTheConsoleFloat(arrFloat, size1);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Edit value this array: " << endl;
-	editingAnArrayValue(arrFloat);
-	outputOfArrayValuesToTheConsole(arrFloat, size1);
-#undef FLOAT
+	editingAnArrayValueFloat(arrFloat);
+	outputOfArrayValuesToTheConsoleFloat(arrFloat, size1);
+
 
 	cout << "\n////////////////////////////////*************CHAR**************////////////////////////////////////\n";
 	const int size2 = 10;
 	char arrChar[size2];
-	fillingTheArrayWithRandomValues(arrChar, size2);
+	fillingTheArrayWithRandomValuesChar(arrChar, size2);
 	cout << "Show this array: " << endl;
-	outputOfArrayValuesToTheConsole(arrChar, size2);
+	outputOfArrayValuesToTheConsoleChar(arrChar, size2);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Find minimum this array: " << endl;
-	findingTheMinimumElement(arrChar, size2);
+	findingTheMinimumElementChar(arrChar, size2);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Find maximum this array: " << endl;
-	findingTheMaximumElement(arrChar, size2);
+	findingTheMaximumElementChar(arrChar, size2);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Lets sort this array: " << endl;
-	sorting(arrChar, size2);
-	outputOfArrayValuesToTheConsole(arrChar, size2);
+	sortingChar(arrChar, size2);
+	outputOfArrayValuesToTheConsoleChar(arrChar, size2);
 	cout << endl;
 	cout << "\n==================================================\n";
 	cout << "Edit value this array: " << endl;
-	editingAnArrayValue(arrChar);
-	outputOfArrayValuesToTheConsole(arrChar, size2);
-#undef CHAR
+	editingAnArrayValueChar(arrChar);
+	outputOfArrayValuesToTheConsoleChar(arrChar, size2);
+
 }
