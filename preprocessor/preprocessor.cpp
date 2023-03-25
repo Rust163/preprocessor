@@ -1,7 +1,5 @@
 ﻿#include <iostream>
 #include "function.h"
-#define INTEGER
-#define FLOAT
 #define CHAR
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
@@ -10,8 +8,7 @@
 #define EVEN_NOT_EVEN(x) ( x % 2 == 0 ? "Четное" : "Не четное" )
 using namespace std;
 
-int main()
-{
+int main() {
 	setlocale(LC_ALL, "rus");
 	cout << "Наименьшее из двух чисел: " << MIN(23, 15) << endl;
 	cout << "Наибольшее из двух чисел: " << MAX(23, 15) << endl;
@@ -19,6 +16,8 @@ int main()
 	cout << "Возведение числа в степень: " << POW(3) << endl;
 	cout << "Проверка числа на четноесть или не четность: " << EVEN_NOT_EVEN(3) << endl;
 
+#ifdef INTEGER
+#include "function.h"
 	cout << "\n////////////////////////////////*************INTEGER**************////////////////////////////////////\n";
 	const int size = 10;
 	int arrInteger[size];
@@ -43,8 +42,9 @@ int main()
 	cout << "Edit value this array: " << endl;
 	editingAnArrayValueInteger(arrInteger);
 	outputOfArrayValuesToTheConsoleInteger(arrInteger, size);
-
-
+#endif // INTEGER
+#ifdef FLOAT
+#include "function.h"
 	cout << "\n////////////////////////////////*************FLOAT**************////////////////////////////////////\n";
 	const int size1 = 10;
 	float arrFloat[size1];
@@ -69,8 +69,9 @@ int main()
 	cout << "Edit value this array: " << endl;
 	editingAnArrayValueFloat(arrFloat);
 	outputOfArrayValuesToTheConsoleFloat(arrFloat, size1);
-
-
+#endif // FLOAT
+#ifdef CHAR
+#include "function.h"
 	cout << "\n////////////////////////////////*************CHAR**************////////////////////////////////////\n";
 	const int size2 = 10;
 	char arrChar[size2];
@@ -95,5 +96,5 @@ int main()
 	cout << "Edit value this array: " << endl;
 	editingAnArrayValueChar(arrChar);
 	outputOfArrayValuesToTheConsoleChar(arrChar, size2);
-
+#endif // CHAR
 }
